@@ -123,6 +123,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.8.2"
+  scrabble_word_checker:
+    dependency: "direct main"
+    description:
+      name: scrabble_word_checker
+      sha256: "111000e51f53035f57b3042de9efa94bb672219d6f9d1a797ec14aad7e8b648d"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.0.1"
   sky_engine:
     dependency: transitive
     description: flutter
@@ -186,3 +194,4 @@ packages:
     version: "2.1.4"
 sdks:
   dart: ">=2.19.6 <3.0.0"
+  flutter: ">=1.17.0"
