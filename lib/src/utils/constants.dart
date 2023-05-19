@@ -1,0 +1,1 @@
+enum ScrabbleLanguage { french, english }
