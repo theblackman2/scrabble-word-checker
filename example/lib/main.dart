@@ -33,7 +33,7 @@ class _MyHomePageState extends State<MyHomePage> {
   final GlobalKey<FormState> formKey = GlobalKey<FormState>();
   final TextEditingController controller = TextEditingController();
   String word = "";
-  bool valid = true;
+  bool valid = false;
 
   @override
   void dispose() {
@@ -65,16 +65,12 @@ class _MyHomePageState extends State<MyHomePage> {
             padding: const EdgeInsets.all(30.0),
             child: Column(
               children: [
-                if (!word.isNotEmpty)
-                  Column(
-                    children: [
-                      Text("Word: $word"),
-                      const SizedBox(height: 10.0),
-                      Text(
-                        "Valid: ${valid.toString()}",
-                      ),
-                    ],
-                  ),
+                Text("Word: $word"),
+                const SizedBox(height: 10.0),
+                Text(
+                  "Valid: ${valid.toString()}",
+                ),
+                const SizedBox(height: 20.0),
                 Form(
                   key: formKey,
                   child: Column(
