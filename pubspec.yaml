@@ -1,7 +1,8 @@
 name: scrabble_word_checker
-description: A new Flutter package project.
+description: Check words with the official scrabble dictionary.
 version: 0.0.1
-homepage:
+# author: TheBlackMan <paskasonga@gmail.com>
+homepage: https://github.com/theblackman2/scrabble-word-checker
 
 environment:
   sdk: '>=2.19.6 <3.0.0'
