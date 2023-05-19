@@ -17,3 +17,17 @@ dev_dependencies:
   flutter_lints: ^2.0.0
 
 flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.scrabble_word.checker
+        pluginClass: ScrabbleWordChecker
+      ios:
+        pluginClass: ScrabbleWordChecker
+      macos:
+        pluginClass: ScrabbleWordChecker
+      web:
+        pluginClass: ScrabbleWordChecker
+        filename: scrabble_word_checker.dart
+      windows:
+        pluginClass: ScrabbleWordChecker
