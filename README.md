@@ -5,7 +5,7 @@ Add the dependency to your `pubspec.yaml` file.
 
 ```yaml
 dependencies:
-  scrabble_word_checker: ^0.0.3
+  scrabble_word_checker: ^0.0.4
 ```
 
 Get dependencies

@@ -9,3 +9,7 @@
 ## 0.0.3
 
 - Feat✨: add english support
+
+## 0.0.4
+
+- Update example app
