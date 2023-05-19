@@ -1,8 +1,8 @@
-import './words.dart';
+import 'dictionary/french.dart';
 
 class ScrabbleWordChecker {
   bool isValidWord(String word) {
-    if (words.contains(word.toUpperCase())) {
+    if (frenchWords.contains(word.toUpperCase())) {
       return true;
     }
     return false;
