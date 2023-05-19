@@ -1,6 +1,6 @@
 name: scrabble_word_checker
 description: Check words with the official scrabble dictionary.
-version: 0.0.1
+version: 0.0.2
 # author: TheBlackMan <paskasonga@gmail.com>
 homepage: https://github.com/theblackman2/scrabble-word-checker
 
