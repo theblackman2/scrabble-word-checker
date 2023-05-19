@@ -1,3 +1,4 @@
+import 'dictionary/english.dart';
 import 'dictionary/french.dart';
 import 'utils/constants.dart';
 
@@ -13,9 +14,13 @@ class ScrabbleWordChecker {
   }
 
   bool isValidWord(String word) {
-    if (frenchWords.contains(word.toUpperCase())) {
-      return true;
+    switch (language) {
+      case ScrabbleLanguage.english:
+        return englishWords.contains(word);
+      case ScrabbleLanguage.french:
+        return frenchWords.contains(word.toUpperCase());
+      default:
+        return false;
     }
-    return false;
   }
 }
