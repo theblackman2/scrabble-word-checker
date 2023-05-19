@@ -13,6 +13,11 @@ Get dependencies
 $ flutter pub get
 ```
 
+## Supported languages
+<ul>
+  <li>French</li>
+</ul>
+
 ## Usage
 To use this package, first import in anywhere in your code
 
