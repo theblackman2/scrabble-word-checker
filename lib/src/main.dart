@@ -1,12 +1,7 @@
 import './words.dart';
 
 class ScrabbleWordChecker {
-  final String word;
-  ScrabbleWordChecker({
-    required this.word,
-  });
-
-  bool isValidWord() {
+  bool isValidWord(String word) {
     if (words.contains(word)) {
       return true;
     }
