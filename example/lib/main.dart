@@ -34,11 +34,18 @@ class _MyHomePageState extends State<MyHomePage> {
   final TextEditingController controller = TextEditingController();
   String word = "";
   bool valid = false;
+  ScrabbleLanguage language = ScrabbleLanguage.french;
 
   @override
   void dispose() {
     controller.dispose();
     super.dispose();
+  }
+
+  @override
+  void initState() {
+    wordChecker.changeLanguage(language);
+    super.initState();
   }
 
   void checkWord() {
@@ -69,6 +76,23 @@ class _MyHomePageState extends State<MyHomePage> {
                 const SizedBox(height: 10.0),
                 Text(
                   "Valid: ${valid.toString()}",
+                ),
+                const SizedBox(height: 15.0),
+                DropdownButton(
+                  value: language,
+                  items: ScrabbleLanguage.values
+                      .map(
+                        (e) => DropdownMenuItem(
+                          value: e,
+                          child: Text(e.name),
+                        ),
+                      )
+                      .toList(),
+                  onChanged: (v) {
+                    language = v!;
+                    wordChecker.changeLanguage(v);
+                    setState(() {});
+                  },
                 ),
                 const SizedBox(height: 20.0),
                 Form(
