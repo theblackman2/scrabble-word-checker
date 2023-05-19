@@ -5,3 +5,7 @@
 ## 0.0.2
 
 - Fix🐛: transform text to toUpperCase before check
+
+## 0.0.3
+
+- Feat✨: add english support
