@@ -18,3 +18,7 @@
 
 - Update readme file with more description
 - Add code documentation
+
+## 0.0.6
+
+- Reduce description text
