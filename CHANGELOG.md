@@ -13,3 +13,8 @@
 ## 0.0.4
 
 - Update example app
+
+## 0.0.5
+
+- Update readme file with more description
+- Add code documentation
