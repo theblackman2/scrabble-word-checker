@@ -23,14 +23,14 @@ void main() {
         expect(language, ScrabbleLanguage.english);
       },
     );
-  });
 
-  test(
-    "Check if the language changes successfully",
-    () {
-      final ScrabbleWordChecker checker = ScrabbleWordChecker();
-      checker.changeLanguage(ScrabbleLanguage.english);
-      expect(checker.language, ScrabbleLanguage.english);
-    },
-  );
+    test(
+      "Check if the language changes successfully",
+      () {
+        final ScrabbleWordChecker checker = ScrabbleWordChecker();
+        checker.changeLanguage(ScrabbleLanguage.english);
+        expect(checker.language, ScrabbleLanguage.english);
+      },
+    );
+  });
 }
