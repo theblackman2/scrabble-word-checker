@@ -34,6 +34,7 @@ class _MyHomePageState extends State<MyHomePage> {
   final TextEditingController controller = TextEditingController();
   String word = "";
   bool valid = false;
+  int value = 0;
   ScrabbleLanguage language = ScrabbleLanguage.french;
 
   @override
@@ -56,6 +57,7 @@ class _MyHomePageState extends State<MyHomePage> {
       return;
     }
     valid = wordChecker.isValidWord(controller.text.trim());
+    value = wordChecker.getWordValue(controller.text.trim());
     word = controller.text.trim();
     setState(() {});
   }
@@ -77,6 +79,8 @@ class _MyHomePageState extends State<MyHomePage> {
                 Text(
                   "Valid: ${valid.toString()}",
                 ),
+                const SizedBox(height: 10.0),
+                Text("Value: $value"),
                 const SizedBox(height: 15.0),
                 DropdownButton(
                   value: language,
