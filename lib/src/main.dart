@@ -36,4 +36,16 @@ class ScrabbleWordChecker {
         return false;
     }
   }
+
+  /// Returns an int value based on [letterValues]
+  ///
+  /// Takes a word as parametter
+  int getWordValue(String word) {
+    int sum = 0;
+    for (int i = 0; i < word.length; i++) {
+      final int value = letterValues[word[i].toLowerCase()] ?? 0;
+      sum += value;
+    }
+    return sum;
+  }
 }
