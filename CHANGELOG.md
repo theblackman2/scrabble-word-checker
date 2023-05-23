@@ -22,3 +22,7 @@
 ## 0.0.6
 
 - Reduce description text
+
+## 0.0.7
+
+- Add word value getter method

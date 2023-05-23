@@ -42,6 +42,12 @@ bool isCorrect1 = wordChecker.isValidWord("aa"); // Expected: true
 bool isCorrect2 = wordChecker.isValidWord("a"); // Expected: false
 ```
 
+Get word value
+
+```dart
+int value = wordChecker.getWordValue("black"); // Expected: 13
+```
+
 Change language
 ```dart
 wordChecker.changeLanguage(ScrabbleLanguage.french)
