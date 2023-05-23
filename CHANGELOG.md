@@ -26,3 +26,7 @@
 ## 0.0.7
 
 - Add word value getter method
+
+## 0.0.8
+
+- Add tests🧪
