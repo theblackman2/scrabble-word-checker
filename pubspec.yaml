@@ -1,6 +1,6 @@
 name: scrabble_word_checker
 description: The Scrabble ODS Word Checker is a Flutter package that allows you to check if a word is in the Official Scrabble Dictionary (ODS).
-version: 0.0.7
+version: 0.0.8
 # author: TheBlackMan <paskasonga@gmail.com>
 homepage: https://github.com/theblackman2/scrabble-word-checker
 
