@@ -127,10 +127,10 @@ packages:
     dependency: "direct main"
     description:
       name: scrabble_word_checker
-      sha256: "96c37ef0e670d944ad3088f6f7788464b5742747d58eeeff41162b657edea0be"
+      sha256: "73726d8d5e7cb2cf6b32f0b9a85cef551b60152a5c02752eb0656289aaf1547d"
       url: "https://pub.dev"
     source: hosted
-    version: "0.0.3"
+    version: "0.0.7"
   sky_engine:
     dependency: transitive
     description: flutter
